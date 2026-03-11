@@ -1,2 +1,21 @@
-- name: 🚀 Super Ultra Typescript Deploy
-  uses: zhjpwlj/ultimate-deploy-system@1.0.3
+name: Super Ultra Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: 🚀 Super Ultra Typescript Deploy
+        uses: zhjpwlj/ultimate-deploy-system@1.0.3
